@@ -39,4 +39,18 @@ objfile.close()
 
 print("/nShelving lists.")
 s = shelve.open("picklez.dat")
+#---------------------------------------#
+#Traceback error#
+#see below# 
+
+Traceback (most recent call last):
+  File "C:/_PythonClass/Assignment07/Module07/Pickle_It.py", line 41, in <module>
+    s = shelve.open("picklez.dat")
+  File "C:\Users\rlarge\AppData\Local\Programs\Python\Python37-32\lib\shelve.py", line 243, in open
+    return DbfilenameShelf(filename, flag, protocol, writeback)
+  File "C:\Users\rlarge\AppData\Local\Programs\Python\Python37-32\lib\shelve.py", line 227, in __init__
+    Shelf.__init__(self, dbm.open(filename, flag), protocol, writeback)
+  File "C:\Users\rlarge\AppData\Local\Programs\Python\Python37-32\lib\dbm\__init__.py", line 88, in open
+    raise error[0]("db type could not be determined")
+dbm.error: db type could not be determined
 
